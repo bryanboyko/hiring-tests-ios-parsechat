@@ -1,6 +1,6 @@
 ## iOS Test: Parse Chat
 
-This test requires you to build a chat client using Parse and Facebook user authentication. To complete this app, you should set up a [Parse](https://parse.com/) project, and a Facebook app to handle oauth. The app functions as a single chat room, where any user who downloads the app can post messages to the room for all other members to see. 
+This test requires you to build a chat client using Parse and Facebook user authentication. To complete this app, you should set up a [Parse](https://parse.com/) project, and a [Facebook app](https://developers.facebook.com/) to handle oauth. The app functions as a single chat room, where any user who downloads the app can post messages to the room for all other members to see. 
 
 Build an app that satisfies the user stories below. We want to see how you think about application development and design, so we've left it up to you to decide how the app will be implemented.
 
