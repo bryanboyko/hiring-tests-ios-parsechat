@@ -52,8 +52,8 @@
 {
     [HMessage registerSubclass];
     [HUser registerSubclass];
-    [Parse setApplicationId:@"cPiLlnV4JN5uKal4zqbvYnIf4dzxRrbP6pTxx3dp"
-                  clientKey:@"blqEnCwrTeSTjghEvbYWhjPR01QZArDcavyqtHSO"];
+    [Parse setApplicationId:@"XKpaUO7KuMasBJ2o8yeTeTtQh7rI8uujLBbM6Kni"
+                  clientKey:@"WPTmIZQkr2BCkfhlYvGiUktbjongxGezifz6JhkO"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

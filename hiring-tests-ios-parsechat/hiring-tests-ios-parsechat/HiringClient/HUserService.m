@@ -25,7 +25,9 @@
      ^(PFUser *user, NSError *error) {
          __strong __typeof(weakSelf)strongSelf = weakSelf;
          handler(user, error);
-         [strongSelf loadPicUrl];
+         if ([HUser currentUser].profileUrlString == nil) {
+             [strongSelf loadPicUrl];
+         }
      }];
 }
 
@@ -37,14 +39,16 @@
     user.fullName = name;
     user.password = [NSString stringWithFormat:@"%@%@", [user.fullName MD5String], @"password"];
     [HPasswordManager sharedManager].password = user.password;
+    __weak __typeof(self)weakSelf = self;
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        [strongSelf loadPicUrl];
         handler(succeeded, error);
     }];
 }
 
 - (void)loadPicUrl
 {
-    
     if ([FBSDKAccessToken currentAccessToken]) {
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
