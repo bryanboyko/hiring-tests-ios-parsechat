@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "HClientFwds.h"
 
+#define H_FACTORY   [HFactory sharedFactory]
+
 @interface HFactory : NSObject
 
 + (HFactory *)sharedFactory;

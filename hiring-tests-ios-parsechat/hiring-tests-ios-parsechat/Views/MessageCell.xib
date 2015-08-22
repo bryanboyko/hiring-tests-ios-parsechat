@@ -25,37 +25,56 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u41-8U-7lp" userLabel="profileImageView">
                         <rect key="frame" x="8" y="30" width="74" height="74"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="74" id="FM2-X6-NKi"/>
                             <constraint firstAttribute="width" constant="74" id="qjc-6f-FtN"/>
                         </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcZ-nk-2XD" userLabel="contentTextView">
-                        <rect key="frame" x="90" y="59" width="222" height="123"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcZ-nk-2XD" userLabel="contentTextView">
+                        <rect key="frame" x="90" y="36" width="222" height="123"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCs-IE-9i2" userLabel="timeLabel">
+                        <rect key="frame" x="8" y="175" width="187" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MrD-kY-yEK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="gcZ-nk-2XD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="82" id="7sh-NF-oYe"/>
                     <constraint firstAttribute="trailingMargin" secondItem="u41-8U-7lp" secondAttribute="trailing" constant="230" id="IUm-sj-o3G"/>
+                    <constraint firstItem="PCs-IE-9i2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Nem-46-1Qp"/>
                     <constraint firstItem="5xy-6p-l94" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Neu-aQ-w9U"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="gcZ-nk-2XD" secondAttribute="bottom" constant="8" id="R6I-Ty-0ZK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gcZ-nk-2XD" secondAttribute="bottom" constant="31" id="R6I-Ty-0ZK"/>
                     <constraint firstItem="5xy-6p-l94" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Rvp-rP-w8x"/>
                     <constraint firstItem="5xy-6p-l94" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XP2-wT-H2M"/>
-                    <constraint firstItem="gcZ-nk-2XD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="51" id="p4A-Nd-lhO"/>
+                    <constraint firstItem="u41-8U-7lp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Yds-zA-lGQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PCs-IE-9i2" secondAttribute="bottom" constant="-6" id="crA-Yq-4ke"/>
+                    <constraint firstItem="gcZ-nk-2XD" firstAttribute="leading" secondItem="PCs-IE-9i2" secondAttribute="trailing" constant="-105" id="dqD-dX-TKT"/>
+                    <constraint firstItem="gcZ-nk-2XD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="28" id="p4A-Nd-lhO"/>
                     <constraint firstItem="5xy-6p-l94" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qdh-yW-cuY"/>
                     <constraint firstItem="gcZ-nk-2XD" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="smU-Ov-nhJ"/>
                     <constraint firstItem="u41-8U-7lp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="thE-oA-Teo"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="IUm-sj-o3G"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="contentTextView" destination="gcZ-nk-2XD" id="ZzM-8C-19X"/>
-                <outlet property="contentTextview" destination="gcZ-nk-2XD" id="HvO-WY-kza"/>
                 <outlet property="nameLabel" destination="5xy-6p-l94" id="cFA-dd-zku"/>
                 <outlet property="profileImageView" destination="u41-8U-7lp" id="lZX-AW-zF6"/>
+                <outlet property="timeLabel" destination="PCs-IE-9i2" id="doS-9g-ECW"/>
             </connections>
             <point key="canvasLocation" x="600" y="574"/>
         </tableViewCell>

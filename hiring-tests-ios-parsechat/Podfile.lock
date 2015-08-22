@@ -1,0 +1,50 @@
+PODS:
+  - Bolts (1.2.0):
+    - Bolts/AppLinks
+    - Bolts/Tasks
+  - Bolts/AppLinks (1.2.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.2.0)
+  - CommonCrypto (1.1)
+  - Facebook-iOS-SDK (4.1.0):
+    - Bolts (~> 1.1)
+    - Facebook-iOS-SDK/CoreKit
+    - Facebook-iOS-SDK/LoginKit
+    - Facebook-iOS-SDK/ShareKit
+  - Facebook-iOS-SDK/CoreKit (4.1.0):
+    - Bolts (~> 1.1)
+    - Facebook-iOS-SDK/CoreKit/no-arc
+  - Facebook-iOS-SDK/CoreKit/no-arc (4.1.0):
+    - Bolts (~> 1.1)
+  - Facebook-iOS-SDK/LoginKit (4.1.0):
+    - Bolts (~> 1.1)
+    - Facebook-iOS-SDK/CoreKit
+  - Facebook-iOS-SDK/ShareKit (4.1.0):
+    - Bolts (~> 1.1)
+    - Facebook-iOS-SDK/CoreKit
+  - MBProgressHUD (0.9.1)
+  - Parse (1.8.1):
+    - Bolts/Tasks (>= 1.2.0)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.3)
+  - SVPullToRefresh (0.4.1)
+
+DEPENDENCIES:
+  - CommonCrypto (~> 1.1)
+  - Facebook-iOS-SDK (~> 4.1)
+  - MBProgressHUD (~> 0.9)
+  - Parse (~> 1.8)
+  - SDWebImage (~> 3.7)
+  - SVPullToRefresh (~> 0.4)
+
+SPEC CHECKSUMS:
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  CommonCrypto: e18c8416332cca5efe80c197f2a522d471c42626
+  Facebook-iOS-SDK: f42dfb27283bf5f05e3a9edc88459a75b9892d99
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+
+COCOAPODS: 0.34.4

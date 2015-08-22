@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'hiring-tests-ios-parsechat' do
+    
+    pod 'SDWebImage', '~> 3.7'
+    pod 'Facebook-iOS-SDK', '~> 4.1'
+    pod 'Parse', '~> 1.8'
+    pod 'CommonCrypto', '~> 1.1'
+    pod 'SVPullToRefresh', '~> 0.4'
+    pod 'MBProgressHUD', '~> 0.9'
+
+end
+
+target 'hiring-tests-ios-parsechatTests' do
+
+end
+

@@ -8,15 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MessageCellDelegate;
+
 @interface MessageCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+
+@property (nonatomic, weak) id<MessageCellDelegate> delegate;
 
 - (void)setCellInfoForUsername:(NSString *)username
-                  withFullName:(NSString *)fullName
+                      fullName:(NSString *)fullName
                       imageUrl:(NSString *)imageUrl
-                       andText:(NSString *)text;
+                    sentAtTime:(NSDate *)sentAt
+                      withText:(NSString *)text
+                     fromIndex:(NSInteger)index;
+
+@end
+
+
+@protocol MessageCellDelegate <NSObject>
+
+- (void)cellLongPressed:(MessageCell *)cell atIndex:(NSInteger)index;
 
 @end

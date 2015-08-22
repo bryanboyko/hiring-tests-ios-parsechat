@@ -10,10 +10,13 @@
 #define hiring_tests_ios_parsechat_HClientFwds_h
 
 #import "HClientPublic.h"
+#import "HClientConstants.h"
 
 @class HFactory;
 @class HUserService;
 @class HMessageService;
-@class HClientConstants;
+@class HMessage;
+@class HUser;
+@class HPasswordManager;
 
 #endif

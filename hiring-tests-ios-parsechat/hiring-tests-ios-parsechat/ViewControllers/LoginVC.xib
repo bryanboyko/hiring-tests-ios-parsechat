@@ -6,8 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC">
             <connections>
-                <outlet property="loginButton" destination="Sdy-q9-QlA" id="Lak-Ws-Bxj"/>
-                <outlet property="nameTextField" destination="P2o-vR-seb" id="Q60-JN-jN1"/>
+                <outlet property="fbLoginButton" destination="J6Z-xE-qgg" id="h21-pU-00T"/>
+                <outlet property="loginButton" destination="Sdy-q9-QlA" id="iEb-P2-Lp5"/>
+                <outlet property="nameTextField" destination="P2o-vR-seb" id="2Tm-ak-NGD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,6 +34,9 @@
                     <state key="normal" title="Login">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="yNb-VR-8AQ"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dl-9W-Bei">
                     <rect key="frame" x="163" y="76" width="275" height="21"/>
@@ -44,16 +48,28 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-xE-qgg" customClass="FBSDKLoginButton">
+                    <rect key="frame" x="165" y="358" width="270" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="fTG-tP-Lef"/>
+                        <constraint firstAttribute="height" constant="51" id="tus-M3-Mbs"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="P2o-vR-seb" firstAttribute="top" secondItem="5dl-9W-Bei" secondAttribute="bottom" constant="21" id="09i-Ff-05k"/>
                 <constraint firstAttribute="trailing" secondItem="P2o-vR-seb" secondAttribute="trailing" constant="32" id="1Ce-lN-hro"/>
                 <constraint firstItem="P2o-vR-seb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="2Po-6y-tRD"/>
-                <constraint firstAttribute="centerY" secondItem="Sdy-q9-QlA" secondAttribute="centerY" constant="109" id="Foz-QU-rDy"/>
+                <constraint firstAttribute="centerX" secondItem="J6Z-xE-qgg" secondAttribute="centerX" id="I4v-mG-7i8"/>
                 <constraint firstAttribute="centerX" secondItem="5dl-9W-Bei" secondAttribute="centerX" constant="-0.5" id="ZYp-vM-Cx9"/>
-                <constraint firstItem="P2o-vR-seb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="118" id="aN9-Qz-aJ6"/>
+                <constraint firstItem="J6Z-xE-qgg" firstAttribute="top" secondItem="Sdy-q9-QlA" secondAttribute="bottom" constant="152" id="gFu-7G-jr3"/>
                 <constraint firstAttribute="centerY" secondItem="5dl-9W-Bei" secondAttribute="centerY" constant="213.5" id="hn4-hP-yhw"/>
                 <constraint firstAttribute="centerX" secondItem="Sdy-q9-QlA" secondAttribute="centerX" id="lTx-QF-pMr"/>
+                <constraint firstItem="Sdy-q9-QlA" firstAttribute="top" secondItem="P2o-vR-seb" secondAttribute="bottom" constant="28" id="qKM-3o-E0A"/>
             </constraints>
         </view>
     </objects>

@@ -9,6 +9,11 @@
 #ifndef hiring_tests_ios_parsechat_HClientConstants_h
 #define hiring_tests_ios_parsechat_HClientConstants_h
 
+#define FULL_NAME_KEY   		@"fullNameKey"
+#define INSTALLATION_ID_KEY @"installationId"
+#define PASSWORD_KEY        @"passwordKey"
+
 typedef void (^HCompletionHandler)(id result, NSError *error);
+typedef void (^HSuccessHandler)(BOOL success, NSError *error);
 
 #endif

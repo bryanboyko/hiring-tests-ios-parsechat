@@ -9,11 +9,28 @@
 /* Begin PBXBuildFile section */
 		1932F2F51B87A2BE00CC468B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F2F41B87A2BE00CC468B /* main.m */; };
 		1932F2F81B87A2BE00CC468B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F2F71B87A2BE00CC468B /* AppDelegate.m */; };
-		1932F2FB1B87A2BE00CC468B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F2FA1B87A2BE00CC468B /* ViewController.m */; };
 		1932F2FE1B87A2BE00CC468B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1932F2FC1B87A2BE00CC468B /* Main.storyboard */; };
 		1932F3001B87A2BE00CC468B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1932F2FF1B87A2BE00CC468B /* Images.xcassets */; };
 		1932F3031B87A2BE00CC468B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1932F3011B87A2BE00CC468B /* LaunchScreen.xib */; };
 		1932F30F1B87A2BE00CC468B /* hiring_tests_ios_parsechatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F30E1B87A2BE00CC468B /* hiring_tests_ios_parsechatTests.m */; };
+		1932F31D1B87A5D400CC468B /* HFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F31C1B87A5D400CC468B /* HFactory.m */; };
+		1932F3201B87A5E100CC468B /* HUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F31F1B87A5E100CC468B /* HUserService.m */; };
+		1932F3261B87A5FE00CC468B /* HMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3251B87A5FE00CC468B /* HMessageService.m */; };
+		1932F33E1B87AA5900CC468B /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F33C1B87AA5900CC468B /* MessageCell.m */; };
+		1932F33F1B87AA5900CC468B /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1932F33D1B87AA5900CC468B /* MessageCell.xib */; };
+		1932F3431B87AC2A00CC468B /* MessagingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3411B87AC2A00CC468B /* MessagingVC.m */; };
+		1932F3441B87AC2A00CC468B /* MessagingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1932F3421B87AC2A00CC468B /* MessagingVC.xib */; };
+		1932F3481B87AC4500CC468B /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3461B87AC4500CC468B /* LoginVC.m */; };
+		1932F3491B87AC4500CC468B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1932F3471B87AC4500CC468B /* LoginVC.xib */; };
+		1932F3561B87BBC100CC468B /* HMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3551B87BBC100CC468B /* HMessage.m */; };
+		1932F3591B87BDA100CC468B /* HUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3581B87BDA100CC468B /* HUser.m */; };
+		1932F35C1B87D53000CC468B /* NSString+HApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F35B1B87D53000CC468B /* NSString+HApp.m */; };
+		1932F3601B87DA1F00CC468B /* Loaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F35F1B87DA1F00CC468B /* Loaders.m */; };
+		1932F3641B87DAC800CC468B /* PCAngularActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3631B87DAC800CC468B /* PCAngularActivityIndicatorView.m */; };
+		1932F3671B87EE1500CC468B /* HPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1932F3661B87EE1500CC468B /* HPasswordManager.m */; };
+		1932F36A1B87FAF400CC468B /* iconPostSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1932F3681B87FAF400CC468B /* iconPostSuccess@2x.png */; };
+		1932F36B1B87FAF400CC468B /* iconPostSuccess@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1932F3691B87FAF400CC468B /* iconPostSuccess@3x.png */; };
+		775379F08D6C2B9C4F48A011 /* libPods-hiring-tests-ios-parsechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9200DBB0D9F323A115C79528 /* libPods-hiring-tests-ios-parsechat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +44,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16CA7A49638431F3FAB8E773 /* Pods-hiring-tests-ios-parsechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiring-tests-ios-parsechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-hiring-tests-ios-parsechat/Pods-hiring-tests-ios-parsechat.release.xcconfig"; sourceTree = "<group>"; };
 		1932F2EF1B87A2BE00CC468B /* hiring-tests-ios-parsechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hiring-tests-ios-parsechat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1932F2F31B87A2BE00CC468B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1932F2F41B87A2BE00CC468B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1932F2F61B87A2BE00CC468B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1932F2F71B87A2BE00CC468B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1932F2F91B87A2BE00CC468B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1932F2FA1B87A2BE00CC468B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1932F2FD1B87A2BE00CC468B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1932F2FF1B87A2BE00CC468B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1932F3021B87A2BE00CC468B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1932F3081B87A2BE00CC468B /* hiring-tests-ios-parsechatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hiring-tests-ios-parsechatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1932F30D1B87A2BE00CC468B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1932F30E1B87A2BE00CC468B /* hiring_tests_ios_parsechatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hiring_tests_ios_parsechatTests.m; sourceTree = "<group>"; };
+		1932F31B1B87A5D400CC468B /* HFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFactory.h; path = HiringClient/HFactory.h; sourceTree = "<group>"; };
+		1932F31C1B87A5D400CC468B /* HFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFactory.m; path = HiringClient/HFactory.m; sourceTree = "<group>"; };
+		1932F31E1B87A5E100CC468B /* HUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUserService.h; path = HiringClient/HUserService.h; sourceTree = "<group>"; };
+		1932F31F1B87A5E100CC468B /* HUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUserService.m; path = HiringClient/HUserService.m; sourceTree = "<group>"; };
+		1932F3241B87A5FE00CC468B /* HMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMessageService.h; path = HiringClient/HMessageService.h; sourceTree = "<group>"; };
+		1932F3251B87A5FE00CC468B /* HMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMessageService.m; path = HiringClient/HMessageService.m; sourceTree = "<group>"; };
+		1932F3351B87A80F00CC468B /* HClientFwds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HClientFwds.h; path = HiringClient/HClientFwds.h; sourceTree = "<group>"; };
+		1932F3361B87A81C00CC468B /* HClientPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HClientPublic.h; path = HiringClient/HClientPublic.h; sourceTree = "<group>"; };
+		1932F33B1B87AA5900CC468B /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageCell.h; path = Views/MessageCell.h; sourceTree = "<group>"; };
+		1932F33C1B87AA5900CC468B /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageCell.m; path = Views/MessageCell.m; sourceTree = "<group>"; };
+		1932F33D1B87AA5900CC468B /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = Views/MessageCell.xib; sourceTree = "<group>"; };
+		1932F3401B87AC2A00CC468B /* MessagingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagingVC.h; path = ViewControllers/MessagingVC.h; sourceTree = "<group>"; };
+		1932F3411B87AC2A00CC468B /* MessagingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagingVC.m; path = ViewControllers/MessagingVC.m; sourceTree = "<group>"; };
+		1932F3421B87AC2A00CC468B /* MessagingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessagingVC.xib; path = ViewControllers/MessagingVC.xib; sourceTree = "<group>"; };
+		1932F3451B87AC4500CC468B /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = ViewControllers/LoginVC.h; sourceTree = "<group>"; };
+		1932F3461B87AC4500CC468B /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = ViewControllers/LoginVC.m; sourceTree = "<group>"; };
+		1932F3471B87AC4500CC468B /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginVC.xib; path = ViewControllers/LoginVC.xib; sourceTree = "<group>"; };
+		1932F34A1B87AEFC00CC468B /* HClientConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HClientConstants.h; path = HiringClient/HClientConstants.h; sourceTree = "<group>"; };
+		1932F3541B87BBC100CC468B /* HMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMessage.h; path = HiringClient/HMessage.h; sourceTree = "<group>"; };
+		1932F3551B87BBC100CC468B /* HMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMessage.m; path = HiringClient/HMessage.m; sourceTree = "<group>"; };
+		1932F3571B87BDA100CC468B /* HUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUser.h; path = HiringClient/HUser.h; sourceTree = "<group>"; };
+		1932F3581B87BDA100CC468B /* HUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUser.m; path = HiringClient/HUser.m; sourceTree = "<group>"; };
+		1932F35A1B87D53000CC468B /* NSString+HApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HApp.h"; path = "Categories/NSString+HApp.h"; sourceTree = "<group>"; };
+		1932F35B1B87D53000CC468B /* NSString+HApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HApp.m"; path = "Categories/NSString+HApp.m"; sourceTree = "<group>"; };
+		1932F35E1B87DA1F00CC468B /* Loaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loaders.h; path = Extras/Loaders.h; sourceTree = "<group>"; };
+		1932F35F1B87DA1F00CC468B /* Loaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Loaders.m; path = Extras/Loaders.m; sourceTree = "<group>"; };
+		1932F3621B87DAC800CC468B /* PCAngularActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCAngularActivityIndicatorView.h; sourceTree = "<group>"; };
+		1932F3631B87DAC800CC468B /* PCAngularActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCAngularActivityIndicatorView.m; sourceTree = "<group>"; };
+		1932F3651B87EE1500CC468B /* HPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPasswordManager.h; path = HiringClient/HPasswordManager.h; sourceTree = "<group>"; };
+		1932F3661B87EE1500CC468B /* HPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPasswordManager.m; path = HiringClient/HPasswordManager.m; sourceTree = "<group>"; };
+		1932F3681B87FAF400CC468B /* iconPostSuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconPostSuccess@2x.png"; sourceTree = "<group>"; };
+		1932F3691B87FAF400CC468B /* iconPostSuccess@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconPostSuccess@3x.png"; sourceTree = "<group>"; };
+		9200DBB0D9F323A115C79528 /* libPods-hiring-tests-ios-parsechat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hiring-tests-ios-parsechat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADFCD8CF08B1B64E7CB2103 /* Pods-hiring-tests-ios-parsechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiring-tests-ios-parsechat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hiring-tests-ios-parsechat/Pods-hiring-tests-ios-parsechat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775379F08D6C2B9C4F48A011 /* libPods-hiring-tests-ios-parsechat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +117,8 @@
 				1932F2F11B87A2BE00CC468B /* hiring-tests-ios-parsechat */,
 				1932F30B1B87A2BE00CC468B /* hiring-tests-ios-parsechatTests */,
 				1932F2F01B87A2BE00CC468B /* Products */,
+				99510D258537C9F0D7128EC8 /* Pods */,
+				DCCBB039C2FA29EE8FF737F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +136,11 @@
 			children = (
 				1932F2F61B87A2BE00CC468B /* AppDelegate.h */,
 				1932F2F71B87A2BE00CC468B /* AppDelegate.m */,
-				1932F2F91B87A2BE00CC468B /* ViewController.h */,
-				1932F2FA1B87A2BE00CC468B /* ViewController.m */,
+				1932F3611B87DA2300CC468B /* Extras */,
+				1932F35D1B87D53A00CC468B /* Categories */,
+				1932F33A1B87A97300CC468B /* Views */,
+				1932F3281B87A61100CC468B /* ViewControllers */,
+				1932F3271B87A60400CC468B /* HiringClient */,
 				1932F2FC1B87A2BE00CC468B /* Main.storyboard */,
 				1932F2FF1B87A2BE00CC468B /* Images.xcassets */,
 				1932F3011B87A2BE00CC468B /* LaunchScreen.xib */,
@@ -96,6 +152,8 @@
 		1932F2F21B87A2BE00CC468B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1932F3681B87FAF400CC468B /* iconPostSuccess@2x.png */,
+				1932F3691B87FAF400CC468B /* iconPostSuccess@3x.png */,
 				1932F2F31B87A2BE00CC468B /* Info.plist */,
 				1932F2F41B87A2BE00CC468B /* main.m */,
 			);
@@ -119,6 +177,88 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1932F3271B87A60400CC468B /* HiringClient */ = {
+			isa = PBXGroup;
+			children = (
+				1932F3351B87A80F00CC468B /* HClientFwds.h */,
+				1932F3361B87A81C00CC468B /* HClientPublic.h */,
+				1932F34A1B87AEFC00CC468B /* HClientConstants.h */,
+				1932F31B1B87A5D400CC468B /* HFactory.h */,
+				1932F31C1B87A5D400CC468B /* HFactory.m */,
+				1932F3571B87BDA100CC468B /* HUser.h */,
+				1932F3581B87BDA100CC468B /* HUser.m */,
+				1932F3651B87EE1500CC468B /* HPasswordManager.h */,
+				1932F3661B87EE1500CC468B /* HPasswordManager.m */,
+				1932F31E1B87A5E100CC468B /* HUserService.h */,
+				1932F31F1B87A5E100CC468B /* HUserService.m */,
+				1932F3541B87BBC100CC468B /* HMessage.h */,
+				1932F3551B87BBC100CC468B /* HMessage.m */,
+				1932F3241B87A5FE00CC468B /* HMessageService.h */,
+				1932F3251B87A5FE00CC468B /* HMessageService.m */,
+			);
+			name = HiringClient;
+			sourceTree = "<group>";
+		};
+		1932F3281B87A61100CC468B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1932F3401B87AC2A00CC468B /* MessagingVC.h */,
+				1932F3411B87AC2A00CC468B /* MessagingVC.m */,
+				1932F3421B87AC2A00CC468B /* MessagingVC.xib */,
+				1932F3451B87AC4500CC468B /* LoginVC.h */,
+				1932F3461B87AC4500CC468B /* LoginVC.m */,
+				1932F3471B87AC4500CC468B /* LoginVC.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1932F33A1B87A97300CC468B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1932F33B1B87AA5900CC468B /* MessageCell.h */,
+				1932F33C1B87AA5900CC468B /* MessageCell.m */,
+				1932F33D1B87AA5900CC468B /* MessageCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1932F35D1B87D53A00CC468B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1932F35A1B87D53000CC468B /* NSString+HApp.h */,
+				1932F35B1B87D53000CC468B /* NSString+HApp.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		1932F3611B87DA2300CC468B /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				1932F3621B87DAC800CC468B /* PCAngularActivityIndicatorView.h */,
+				1932F3631B87DAC800CC468B /* PCAngularActivityIndicatorView.m */,
+				1932F35E1B87DA1F00CC468B /* Loaders.h */,
+				1932F35F1B87DA1F00CC468B /* Loaders.m */,
+			);
+			name = Extras;
+			sourceTree = "<group>";
+		};
+		99510D258537C9F0D7128EC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CADFCD8CF08B1B64E7CB2103 /* Pods-hiring-tests-ios-parsechat.debug.xcconfig */,
+				16CA7A49638431F3FAB8E773 /* Pods-hiring-tests-ios-parsechat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCCBB039C2FA29EE8FF737F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9200DBB0D9F323A115C79528 /* libPods-hiring-tests-ios-parsechat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1932F3121B87A2BE00CC468B /* Build configuration list for PBXNativeTarget "hiring-tests-ios-parsechat" */;
 			buildPhases = (
+				8FAF16203CA8969E89BA9FD0 /* Check Pods Manifest.lock */,
 				1932F2EB1B87A2BE00CC468B /* Sources */,
 				1932F2EC1B87A2BE00CC468B /* Frameworks */,
 				1932F2ED1B87A2BE00CC468B /* Resources */,
+				83EB5D75B62E73D384E064A8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +341,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1932F3491B87AC4500CC468B /* LoginVC.xib in Resources */,
 				1932F2FE1B87A2BE00CC468B /* Main.storyboard in Resources */,
+				1932F33F1B87AA5900CC468B /* MessageCell.xib in Resources */,
+				1932F3441B87AC2A00CC468B /* MessagingVC.xib in Resources */,
+				1932F36B1B87FAF400CC468B /* iconPostSuccess@3x.png in Resources */,
+				1932F36A1B87FAF400CC468B /* iconPostSuccess@2x.png in Resources */,
 				1932F3031B87A2BE00CC468B /* LaunchScreen.xib in Resources */,
 				1932F3001B87A2BE00CC468B /* Images.xcassets in Resources */,
 			);
@@ -214,14 +361,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83EB5D75B62E73D384E064A8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hiring-tests-ios-parsechat/Pods-hiring-tests-ios-parsechat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FAF16203CA8969E89BA9FD0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1932F2EB1B87A2BE00CC468B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1932F2FB1B87A2BE00CC468B /* ViewController.m in Sources */,
+				1932F3261B87A5FE00CC468B /* HMessageService.m in Sources */,
+				1932F3671B87EE1500CC468B /* HPasswordManager.m in Sources */,
 				1932F2F81B87A2BE00CC468B /* AppDelegate.m in Sources */,
+				1932F3601B87DA1F00CC468B /* Loaders.m in Sources */,
+				1932F3201B87A5E100CC468B /* HUserService.m in Sources */,
+				1932F35C1B87D53000CC468B /* NSString+HApp.m in Sources */,
+				1932F33E1B87AA5900CC468B /* MessageCell.m in Sources */,
+				1932F31D1B87A5D400CC468B /* HFactory.m in Sources */,
 				1932F2F51B87A2BE00CC468B /* main.m in Sources */,
+				1932F3481B87AC4500CC468B /* LoginVC.m in Sources */,
+				1932F3641B87DAC800CC468B /* PCAngularActivityIndicatorView.m in Sources */,
+				1932F3591B87BDA100CC468B /* HUser.m in Sources */,
+				1932F3561B87BBC100CC468B /* HMessage.m in Sources */,
+				1932F3431B87AC2A00CC468B /* MessagingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +538,7 @@
 		};
 		1932F3131B87A2BE00CC468B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADFCD8CF08B1B64E7CB2103 /* Pods-hiring-tests-ios-parsechat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "hiring-tests-ios-parsechat/Info.plist";
@@ -357,6 +549,7 @@
 		};
 		1932F3141B87A2BE00CC468B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CA7A49638431F3FAB8E773 /* Pods-hiring-tests-ios-parsechat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "hiring-tests-ios-parsechat/Info.plist";
@@ -418,6 +611,7 @@
 				1932F3141B87A2BE00CC468B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1932F3151B87A2BE00CC468B /* Build configuration list for PBXNativeTarget "hiring-tests-ios-parsechatTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +620,7 @@
 				1932F3171B87A2BE00CC468B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

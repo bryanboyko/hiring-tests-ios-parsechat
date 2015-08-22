@@ -9,10 +9,13 @@
 #ifndef hiring_tests_ios_parsechat_HClientPublic_h
 #define hiring_tests_ios_parsechat_HClientPublic_h
 
+#import <Foundation/Foundation.h>
 #import "HFactory.h"
 #import "HUserService.h"
 #import "HMessageService.h"
 #import "HClientConstants.h"
-#import <Foundation/Foundation.h>
+#import "HMessage.h"
+#import "HUser.h"
+#import "HPasswordManager.h"
 
 #endif

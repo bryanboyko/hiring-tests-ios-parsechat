@@ -7,17 +7,57 @@
 //
 
 #import "MessageCell.h"
+#import <SDWebImage/SDImageCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+@interface MessageCell ()
+
+@property (nonatomic, strong) UILongPressGestureRecognizer *longPressRecognizer;
+@property (nonatomic) NSInteger index;
+
+@end
 
 @implementation MessageCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)awakeFromNib
+{
+    if (self.longPressRecognizer == nil)
+    {
+        self.longPressRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(cellLongPressed:)];
+        [self addGestureRecognizer:self.longPressRecognizer];
+    }
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (void)setCellInfoForUsername:(NSString *)username
+                      fullName:(NSString *)fullName
+                      imageUrl:(NSString *)imageUrl
+                    sentAtTime:(NSDate *)sentAt
+                      withText:(NSString *)text
+                     fromIndex:(NSInteger)index
+{
+    // set index for self
+    self.index = index;
+    
+    // set name and text
+    self.nameLabel.text = fullName;
+    self.contentTextView.text = text;
+    
+    // set date
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss zzz"];
+    NSString *stringFromDate = [formatter stringFromDate:sentAt];
+    self.timeLabel.text = stringFromDate;
+    
+    // load and set image
+    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:imageUrl]
+                             placeholderImage:nil
+                                      options:SDWebImageLowPriority
+                                    completed:nil];
+}
 
-    // Configure the view for the selected state
+- (void)cellLongPressed:(id)sender
+{
+    [self.delegate cellLongPressed:self atIndex:self.index];
 }
 
 @end

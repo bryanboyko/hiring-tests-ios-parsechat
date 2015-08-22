@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LoginVCDelegate;
+
 @interface LoginVC : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
-@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+@property (nonatomic, weak) id<LoginVCDelegate> delegate;
+
+@end
+
+@protocol LoginVCDelegate <NSObject>
+
+- (void)userSignedUp;
 
 @end

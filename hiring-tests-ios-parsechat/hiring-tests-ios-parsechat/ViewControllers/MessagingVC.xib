@@ -6,6 +6,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessagingVC">
             <connections>
+                <outlet property="inputTextField" destination="jTn-2f-hp9" id="xGd-KE-e17"/>
+                <outlet property="sendButton" destination="jUb-Km-n2f" id="B0U-SX-UP1"/>
+                <outlet property="sendButtonBottomConstraint" destination="Mqs-9q-gHP" id="VXI-C6-rEt"/>
+                <outlet property="tableView" destination="75S-TH-cP7" id="k3a-sb-tSE"/>
+                <outlet property="tableViewBottomConstraint" destination="2eq-fM-PTF" id="aeI-Pw-zuv"/>
+                <outlet property="textViewBottomConstraint" destination="3Mm-th-oTs" id="seZ-RN-8RW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,20 +21,43 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="75S-TH-cP7">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="AYQ-Jd-Ph6"/>
                         <outlet property="delegate" destination="-1" id="KEp-Z4-8r9"/>
                     </connections>
                 </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTn-2f-hp9" userLabel="inputTextField">
+                    <rect key="frame" x="8" y="562" width="530" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUb-Km-n2f" userLabel="sendButton">
+                    <rect key="frame" x="551" y="562" width="36" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WWI-6H-LhP"/>
+                        <constraint firstAttribute="width" constant="36" id="nbp-hn-7Fh"/>
+                    </constraints>
+                    <state key="normal" title="Send">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendButtonPushed:" destination="-1" eventType="touchUpInside" id="bkc-2b-Oal"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="75S-TH-cP7" secondAttribute="bottom" id="2eq-fM-PTF"/>
+                <constraint firstAttribute="bottom" secondItem="75S-TH-cP7" secondAttribute="bottom" constant="50" id="2eq-fM-PTF"/>
+                <constraint firstAttribute="bottom" secondItem="jTn-2f-hp9" secondAttribute="bottom" constant="8" id="3Mm-th-oTs"/>
+                <constraint firstItem="jTn-2f-hp9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="HUm-At-Hyd"/>
+                <constraint firstAttribute="bottom" secondItem="jUb-Km-n2f" secondAttribute="bottom" constant="8" id="Mqs-9q-gHP"/>
                 <constraint firstAttribute="trailing" secondItem="75S-TH-cP7" secondAttribute="trailing" id="PsO-qT-8WI"/>
                 <constraint firstItem="75S-TH-cP7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RD5-7K-Nq6"/>
                 <constraint firstItem="75S-TH-cP7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U1D-Ss-SQ0"/>
+                <constraint firstAttribute="trailing" secondItem="jUb-Km-n2f" secondAttribute="trailing" constant="13" id="U1s-Dq-9r7"/>
+                <constraint firstItem="jUb-Km-n2f" firstAttribute="leading" secondItem="jTn-2f-hp9" secondAttribute="trailing" constant="13" id="k8v-KS-h2p"/>
             </constraints>
         </view>
     </objects>
